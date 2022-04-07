@@ -8,14 +8,19 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^7.2.8",
     "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && cd build && copy index.html 200.html && surge"
+
   },
   "eslintConfig": {
     "extends": [
